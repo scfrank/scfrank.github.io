@@ -1,0 +1,52 @@
+Syntactic priming is generally understood to occur between instances of the
+same syntactic construction (e.g., Bock, CogPsy 1986). Here we present a
+corpus study which investigates priming effects between similar but
+non-identical constructions. We find that priming occurs between NPs of
+different forms, and that priming strength is linked to the similarity of the
+two NPs.
+
+Adaptation (Church, COLING 2000) measures the increase in production
+frequency due to priming, and has been used to study structural
+priming in corpora (Dubey et al., EMNLP 2005). As adaptation (or
+"self-adaptation") measures the priming effect between two occurrences
+of a rule X, we therefore introduce a new measure, "cross-adaptation",
+which gauges the priming strength between two different structures X
+and Y.
+
+We measure cross-adaptation between pairs of NPs which are either (a)
+coordinate sisters, (b) from the same sentence or (c) from adjacent
+sentences. We use two parsed corpora, one of written text (the Brown
+corpus) and one of unscripted spoken text (a section from the BNC). In
+both corpora, we find that the magnitude of cross-adaptation and
+self-adaptation are similar in each of the three conditions,
+indicating that syntactic priming is not restricted to syntactically
+identical constituents.
+
+Next, we examine whether adaptation strength is linked to construction
+similarity. For each NP, we record the lexical categories of the words
+it dominates (e.g., "DT NN" for "the dog"), and create a vector of
+these part-of-speech tags. The similarity of two NPs can then be
+measured as the Euclidean distance between their vectors. Removing
+matching pairs from the dataset, we find a strong and significant
+correlation (all p < 0.0001) between NP similarity and adaptation
+strength over both corpora and in all three conditions (see table
+below). This result holds even with other measures of similarity
+such as edit distance.
+
+We conclude that the occurrence of a structure primes not only the
+re-occurrence of that exact structure, but also the occurrence of a
+set of similar structures. This suggests that priming of similar
+constructions should also lead to facilitation in an experimental
+setting, a prediction which remains to be tested in future work.
+
+Condition          Correlation
+
+BNC (spoken)       r     N
+Between-Sentence   0.51  16682
+Within-Sentence    0.50  15996
+Within-Coordinate  0.41    233
+
+Brown (written)    r     N
+Between-Sentence   0.45 101856
+Within-Sentence    0.45  85335
+Within-Coordinate  0.44   1392
